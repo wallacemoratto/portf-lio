@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<style>
+    /*variavel de cor*/
+:root{
+    --minha-cor: rgb(52, 42, 255);    
+}
+section.main{    
+    min-height: 800px;
+    background-image: url(imagem/computadorFundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+/*preenchimento formulário*/
+.contato{
+    border-radius: 05px;
+    width: 350px; /* Largura da imagem */
+    height: 350px; /* Altura da imagem */
+    position: absolute;
+    text-align: left;
+    right: 200px;
+    margin-top: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--minha-cor)    
+}
+/*bordas arredondadas*/
+.main form{
+    display: flexbox;
+    border-radius: 10px;
+    
+}
+@media screen and (max-width: 600px) {
+    .contato {
+        width: 90%;
+        right: auto;
+        left: 5%;
+    }
+    .main form {
+        flex-direction: column;
+    }
+}
+</style>
+<body>
+    <!--contato-->
+    <section class="main">
+    <div class="contato">
+        <!--Título do formulário-->
+        <h2 style="color: rgb(0, 0, 0); text-align: center";>Informe e-mail para contato</h2>
+        <form style="text-align: center;">
+            <!--Inputs para preenchimento do formulário-->
+            <p>  Nome: 
+                <input type="text" name="nome" id=""></p>
+            <p>  E-mail: 
+                <input type="email"></p>
+            <p>  Descrição:
+                <textarea style=" resize: none; margin-left: 60px; width: 200px; height: 90px;">
+                
+
+
+
+            </textarea></p>
+            <!--Botão de enviar e-mail e preenchimento prévio-->
+            <p><input type="submit" value="Enviar" style="width: 150px; margin-left: 150px;"></p>
+        </form>
+    </div>
+</section>
+    </body>
+</body>
+</html>
